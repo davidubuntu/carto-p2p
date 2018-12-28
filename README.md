@@ -12,12 +12,17 @@ Simple web application that shows a map of Madrid and a widget with information 
 ## Decisions and Steps
 
 ### Decisions
- I decided to create a webpack js application using a very simple configuration. I used main index.js file and style.css to achieve the main purpose of the web. Using highchart to create a widget and carto to create the map.
+
+ I decided to create a webpack js application using a very simple configuration. I used main index.js file and style.css to achieve the main purpose of the web. Using highchart to create a widget, carto.js and leaflet to create the map.
+
+ I used some carto widget css classes to mantain the Carto  UI styles but overriding some details with my own styles and fonts to give my own aproach to the web.
+
+ I decided to stay in a single file while a good aproach will be to separate widget file and map so that the app could be scalable.
 
 ### Steps
 1) Webpack Simple Configuration
 2) Build Express Node Server to serve web 
-3) Routing sending the user to index html when accesing /
+3) Routing sends the user to index html when accesing /
 4) First simple carto.js map
 6) Added bar higchart.js as a widget 
 7) Connecting higchart widget with carto.js dataView and refreshing each time data is updated. 
@@ -33,10 +38,10 @@ To get a development env running are necessary to follow the next steps:
 
 Clone the repository in a local folder
 ```
-git clone https://github.com/davidubuntu/p2p.git
+git clone https://github.com/davidubuntu/carto-p2p.git
 ```
 ```
-cd p2p
+cd carto-p2p
 ```
 Install Node dependencies
 ```
@@ -61,13 +66,13 @@ http://localhost:8080/
 
 ## Using the app
 
-You can visualize  P2P apartments symbolized with differet colors for each neighbourhood. If you click over a bar chart. You will be able to filter the data visualization in the map for the neighbourhood selected. Also the inormation of the widget will be updated while panning the map.
+You can visualize  P2P apartments symbolized with differet colors for each neighbourhood. If you click over a bar chart you will be able to filter the data visualization in the map for the neighbourhood selected. Also the inormation of the widget will be updated while panning the map.
 
 ## Built With
 
 * [Carto.js](https://carto.com/developers/carto-js/)
 * [Highcahrt.js](https://www.highcharts.com/)
-* [Git] Versioning Used
+* [Git] Versioning
 
 ## Authors
 
@@ -75,5 +80,5 @@ You can visualize  P2P apartments symbolized with differet colors for each neigh
 
 ## Acknowledgments
 
-* Thanks to the carto examples which make me insipired to code this simple web
+* Thanks to the carto examples which insipired me to code this simple web
 * I am insipirated by Carto technology which make me realize about powerful and beauty o GIS visualization
