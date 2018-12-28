@@ -1,0 +1,31 @@
+{
+  "name": "carto-app",
+  "version": "1.0.0",
+  "description": "David Diez Carto App",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server --mode development  --open"
+  },
+  "keywords": [
+    "carto",
+    "app"
+  ],
+  "author": "David Diez Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "@carto/carto.js": "^4.1.8",
+    "cors": "^2.8.5",
+    "css-loader": "^2.0.2",
+    "express": "^4.16.4",
+    "express-favicon": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.12"
+  }
+}

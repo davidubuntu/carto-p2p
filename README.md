@@ -1,0 +1,79 @@
+# Madrid P2P Apartments
+
+Simple web application that shows a map of Madrid and a widget with information about the neighbourhoods with most of the P2P apartments
+
+* Web server with Node (Express)
+* Getting Data from Carto
+* Two approaches
+  * Map Carto.js
+  * Widget UI apartments Filter 
+* Coded with: No framework, only simple JavaScript, DOM and CSS
+
+## Decisions and Steps
+
+### Decisions
+ I decided to create a webpack js application using a very simple configuration. I used main index.js file and style.css to achieve the main purpose of the web. Using highchart to create a widget and carto to create the map.
+
+### Steps
+1) Webpack Simple Configuration
+2) Build Express Node Server to serve web 
+3) Routing sending the user to index html when accesing /
+4) First simple carto.js map
+6) Added bar higchart.js as a widget 
+7) Connecting higchart widget with carto.js dataView and refreshing each time data is updated. 
+
+## Prerequisites
+* Npm (6.4.1)
+* Node js (10.13.0)
+* Webpack (4.28.2)
+
+### Installing
+
+To get a development env running are necessary to follow the next steps:
+
+Clone the repository in a local folder
+```
+git clone https://github.com/davidubuntu/p2p.git
+```
+```
+cd p2p
+```
+Install Node dependencies
+```
+npm install
+```
+If found any vulnerabilty in console run 
+```
+npm audit fix
+```
+
+Run npm  local dev environment
+
+```
+npm start
+```
+Local environment will be opened at 
+
+```
+http://localhost:8080/
+```
+
+
+## Using the app
+
+You can visualize  P2P apartments symbolized with differet colors for each neighbourhood. If you click over a bar chart. You will be able to filter the data visualization in the map for the neighbourhood selected. Also the inormation of the widget will be updated while panning the map.
+
+## Built With
+
+* [Carto.js](https://carto.com/developers/carto-js/)
+* [Highcahrt.js](https://www.highcharts.com/)
+* [Git] Versioning Used
+
+## Authors
+
+* **David Díez Rodríguez** 
+
+## Acknowledgments
+
+* Thanks to the carto examples which make me insipired to code this simple web
+* I am insipirated by Carto technology which make me realize about powerful and beauty o GIS visualization

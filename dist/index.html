@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Include Leaflet -->
+    <link href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://carto.com/developers/carto-js/examples/maps/public/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+
+
+    <!-- CARTO.js -->
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.8/carto.min.js"></script>
+      <!--highcharts.js -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <title>Madrid P2P Apartments</title>
+</head>
+
+<body>
+    <div id="map"></div>
+    <aside class="toolbox">
+        <div class="box">
+            <header>
+                <h1>Madrid P2P Apartments</h1>
+                <button class="github-logo js-source-link"></button>
+            </header>
+            <section>
+                <p class="description open-sans">Select a Neighbourhood to filter map listings</p>
+                <div class="separator"></div>
+                <div id="controls">
+                    <div id="info">
+                        <h3>Neighbourhoods</h3>
+                    </div>
+                    <div id="apartmentsWidget" class="widget">
+                        <div id="p2pchart">
+                        </div>
+                        <div id="btn-box">
+                            <button id="reset-layer">Reset Neighbourhoods Filter</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </aside>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>

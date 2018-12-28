@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Lato-Ligth';
+    src: url(../fonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato-Light";
+}
+
+#map {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+#reset-layer {
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px;
+    border: 1px solid rgba(22, 39, 69, 0.2);
+    border-radius: 3%;
+    color: #00B9BF;
+    transition: all .2s;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-family: "Lato-Bold";
+}
+
+#btn-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+aside.toolbox {
+ position: absolute;
+ left: 24px;
+ min-width: 30vw;
+ max-width: 30vw;
+ z-index: 2;
+ text-align: center;
+}
+.box header h1 {
+    font-family: "Lato-Light";
+}
+.box header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#controls #info h3{
+    font-family: "Lato-Light";
+}
+.open-sans{
+    font-family: "Lato-Bold";
+}
+
+.highcharts-root{
+    font-family: "Lato-Bold"!important;
+}
+
+.icon{
+    height: 3.5vh;
+}
