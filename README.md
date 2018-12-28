@@ -13,11 +13,15 @@ Simple web application that shows a map of Madrid and a widget with information 
 
 ### Decisions
 
- I decided to create a webpack js application using a very simple configuration. I used main index.js file and style.css to achieve the main purpose of the web. Using highchart to create a widget, carto.js and leaflet to create the map.
+I decided to create a webpack js application using a very simple configuration. I used main index.js file and style.css to achieve the main purpose of the web. Using highchart to create a widget, carto.js and leaflet to create the map.
 
- I used some carto widget css classes to mantain the Carto  UI styles but overriding some details with my own styles and fonts to give my own aproach to the web.
+I decided to stay in a single file while a good aproach will be to separate widget file and map so that the app could be scalable. 
 
- I decided to stay in a single file while a good aproach will be to separate widget file and map so that the app could be scalable.
+I used some carto widget css classes to mantain the Carto  UI styles but overriding some details with my own styles and fonts to give my own aproach to the web.
+
+Also i used the same colors for points of each neighbourhood  in the map and the bar of each of them  in the widget to make easier the taking decitions and be more understable
+
+
 
 ### Steps
 1) Webpack Simple Configuration
@@ -66,7 +70,10 @@ http://localhost:8080/
 
 ## Using the app
 
-You can visualize  P2P apartments symbolized with differet colors for each neighbourhood. If you click over a bar chart you will be able to filter the data visualization in the map for the neighbourhood selected. Also the inormation of the widget will be updated while panning the map.
+You can visualize  P2P apartments symbolized with differet colors for each neighbourhood. 
+If you click over a bar chart you will be able to filter the data visualization in the map for the neighbourhood selected. Clicking in the button will reset the visualization in the map showing all neighbourhoods info again.
+Also the inormation of the widget will be updated while panning the map.
+
 
 ## Built With
 
